@@ -61,11 +61,13 @@ body {
     gap: 37px;
 }
 
-.menu__list a {
+.menu__link,
+.footer__menu__link {
     transition: all 1s;
 }
 
-.menu__list a:hover {
+.menu__link:hover,
+.footer__menu__link:hover {
     color: #DF1DFF;
 }
 
@@ -128,6 +130,13 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
+}
+
+.slider__decor {
+    position: absolute;
+    right: 2%;
+    top: 30%;
+    z-index: -5;
 }
 
 .swiper-pagination-bullets.swiper-pagination-horizontal {
@@ -216,23 +225,11 @@ body {
 .accessories {
     padding-top: 100px;
     background: #04081D;
-    position: relative;
-}
-
-.accessories__bg {
-    top: -45%;
-    position: absolute;
-    z-index: -4;
-}
-
-.accessories__bg-1 {
-    bottom: -45%;
-    position: absolute;
-    z-index: -4;
 }
 
 .accessories__top {
     display: flex;
+    gap: 20px;
     align-items: center;
     padding-bottom: 73px;
 }
@@ -254,6 +251,7 @@ body {
 .accessories__content {
     display: flex;
     flex-wrap: wrap;
+    gap: 10px;
     justify-content: space-between;
     padding-bottom: 55px;
 }
@@ -326,19 +324,6 @@ body {
 
 .news {
     padding: 150px 0 100px 0;
-    position: relative;
-}
-
-.new__bg-1 {
-    position: absolute;
-    top: 0;
-    right: 0;
-    max-width: 100%;
-}
-
-.news-item-bg {
-    position: relative;
-    z-index: -5;
 }
 
 .news__title {
@@ -352,15 +337,6 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
-    position: relative;
-}
-
-.new__bg-2 {
-    position: absolute;
-    top: 45%;
-    left: -7%;
-    z-index: -4;
-    max-width: 100%;
 }
 
 .news__item {
@@ -416,14 +392,6 @@ body {
 .tokenomics__items {
     display: flex;
     justify-content: space-between;
-    position: relative;
-}
-
-.tokenomics__bg {
-    position: absolute;
-    top: -15%;
-    right: -5%;
-    z-index: -5;
 }
 
 .tokenomics__item {
@@ -504,14 +472,6 @@ body {
     background-size: contain;
     padding: 50px 50px;
     margin-top: 150px;
-    position: relative;
-}
-
-.tokenomics__footer-bg {
-    position: absolute;
-    top: -7%;
-    left: -3%;
-    z-index: -5;
 }
 
 .tokenomics__footer-left {
@@ -663,6 +623,20 @@ body {
         flex-wrap: wrap;
         justify-content: center;
     }
+
+    .famsters {
+        padding-bottom: 0;
+    }
+
+    .famsters__footer {
+        padding-top: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer {
+        padding-top: 100px;
+    }
 }
 
 @media (max-width: 968px) {
@@ -671,6 +645,12 @@ body {
     .tokenomics__footer-button {
         width: auto;
         text-align: center;
+    }
+
+    .tokenomics__footer-button {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
     }
 
     .famsters__top-left {
@@ -709,7 +689,7 @@ body {
     .footer__content {
         flex-wrap: wrap;
         justify-content: center;
-        gap: 100px;
+        gap: 30px;
     }
 
     .tokenomics__item {

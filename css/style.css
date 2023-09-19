@@ -1,5 +1,18 @@
 @import url(../css/fonts.css);
 
+body {
+    font-family: 'Cerebri Sans Pro';
+    font-size: 16px;
+    font-weight: 500;
+    background: #04081D;
+    color: #EBEBEB;
+    overflow-x: hidden;
+}
+
+ul {
+    list-style: none;
+}
+
 a {
     color: inherit;
     text-decoration: none;
@@ -11,22 +24,6 @@ button {
     background-color: transparent;
     cursor: pointer;
     color: inherit;
-}
-
-ul {
-    list-style: none;
-}
-
-body {
-    font-family: 'Cerebri Sans Pro';
-    font-size: 16px;
-    font-weight: 500;
-    background: #04081D;
-    color: #EBEBEB;
-}
-
-.off__disp {
-    display: none;
 }
 
 .container {
@@ -47,6 +44,22 @@ body {
     transform: translateY(-5px);
     color: #DF1DFF
 }
+
+.main__title {
+    color: #FFF;
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.second__title {
+    font-family: 'Press Start 2P';
+    color: #FFF;
+    font-size: 22px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+/* HEADER START */
 
 .header__top {
     display: flex;
@@ -78,11 +91,6 @@ body {
     align-items: center;
 }
 
-.header__content-left {
-    position: relative;
-    max-width: 500px;
-}
-
 .header__content-left-decor {
     font-size: 220.8px;
     font-weight: 700;
@@ -96,6 +104,11 @@ body {
     -webkit-text-fill-color: transparent;
 }
 
+.header__content-left {
+    position: relative;
+    max-width: 500px;
+}
+
 .header__content-left-top {
     font-family: 'Press Start 2P';
     font-size: 14px;
@@ -105,9 +118,6 @@ body {
 }
 
 .header__content-left-title {
-    color: #FFF;
-    font-size: 64px;
-    font-weight: 600;
     padding-bottom: 35px;
 }
 
@@ -117,6 +127,10 @@ body {
     font-weight: 500;
     padding-bottom: 50px;
 }
+
+/* HEADER END */
+
+/* SLIDER START */
 
 .slider {
     padding-top: 67px;
@@ -132,32 +146,17 @@ body {
     background-size: contain;
 }
 
-.slider__decor {
-    position: absolute;
-    right: 2%;
-    top: 30%;
-    z-index: -5;
-}
-
-.swiper-pagination-bullets.swiper-pagination-horizontal {
-    bottom: 10% !important;
-    left: 85% !important;
-}
-
 .slider__box-title {
-    color: #FFF;
-    font-size: 48px;
-    font-weight: 600;
     padding-bottom: 53px;
+}
+
+.swiper1 {
+    max-width: 1000px;
 }
 
 .slider__box-content {
     display: flex !important;
     justify-content: space-between;
-}
-
-.swiper1 {
-    max-width: 1000px;
 }
 
 .swiper-pagination-bullet-active-main {
@@ -166,12 +165,21 @@ body {
     background-color: #fff !important;
 }
 
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: 10% !important;
+    left: 85% !important;
+}
+
 .swiper-pagination-bullet-active-next,
 .swiper-pagination-bullet-active-prev,
 .swiper-pagination-bullet-active-next-next {
     background: #fff !important;
     opacity: 1 !important;
 }
+
+/* SLIDER END */
+
+/* FAMSTER START */
 
 .famsters {
     padding: 232px 0 150px 0;
@@ -189,8 +197,6 @@ body {
 }
 
 .famsters__top-title {
-    font-size: 48px;
-    font-weight: 600;
     padding-bottom: 50px;
     position: relative;
     max-width: 340px;
@@ -222,8 +228,12 @@ body {
     padding-top: 81px;
 }
 
+/* FAMSTER END */
+
+/* ACCESSORIES START */
+
 .accessories {
-    padding-top: 100px;
+    padding: 100px 0 45px 0;
     background: #04081D;
 }
 
@@ -243,93 +253,44 @@ body {
     padding-bottom: 25px;
 }
 
-.accessories__top-title {
-    font-size: 48px;
-    font-weight: 600;
-}
-
 .accessories__content {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
-    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    gap: 21px;
+    justify-content: center;
     padding-bottom: 55px;
 }
 
-.accessories__content img {
-    object-fit: contain;
-}
-
 .accessories__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 110px;
+    height: 110px;
     border-radius: 25px;
     background: linear-gradient(98deg, #383954 0%, rgba(56, 57, 84, 0.35) 100%, #383954 100%);
     backdrop-filter: blur(50px);
 }
 
-.hats-1 {
-    padding: 29px 17px;
-}
+/* ACCESSORIES END */
 
-.hats-2 {
-    padding: 43px 15px;
-}
-
-.hats-3 {
-    padding: 29px 30px;
-}
-
-.hats-4 {
-    padding: 29px 22px;
-}
-
-.items-1 {
-    padding: 29px 27px;
-}
-
-.items-2 {
-    padding: 29px 30px;
-}
-
-.items-3 {
-    padding: 29px 27px;
-}
-
-.items-4 {
-    padding: 29px 28px;
-}
-
-.items-5 {
-    padding: 29px 31px;
-}
-
-.items-6 {
-    padding: 29px 31px;
-}
-
-.items-7 {
-    padding: 29px 36px;
-}
-
-.items-8 {
-    padding: 29px 31px;
-}
-
-.items-9 {
-    padding: 29px 27px;
-}
-
-.items-10 {
-    padding: 29px 29px;
-}
+/* NEWS START */
 
 .news {
     padding: 150px 0 100px 0;
+    position: relative;
+}
+
+.news__top-decor {
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 
 .news__title {
     text-align: center;
-    font-size: 48px;
-    font-weight: 600;
     padding-bottom: 80px;
 }
 
@@ -337,6 +298,19 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
+    position: relative;
+}
+
+.news__item-decor {
+    position: absolute;
+    left: -6%;
+    top: 45%;
+    z-index: -4;
+}
+
+.news-item-bg-1 {
+    position: relative;
+    z-index: -5;
 }
 
 .news__item {
@@ -348,11 +322,6 @@ body {
 }
 
 .news__item-title {
-    font-family: 'Press Start 2P';
-    color: #fff;
-    font-size: 18px;
-    font-weight: 400;
-    text-transform: uppercase;
     padding-bottom: 20px;
     max-width: 286px;
 }
@@ -366,9 +335,15 @@ body {
     max-width: 530px;
 }
 
+/* NEWS END */
+
+/* TOKENOMICS START */
+
+.tokenomics {
+    padding-top: 150px;
+}
+
 .tokenomics__top-title {
-    font-size: 48px;
-    font-weight: 600;
     text-align: center;
     padding-bottom: 15px;
 }
@@ -385,13 +360,17 @@ body {
     border-radius: 35px;
 }
 
-.tokenomics {
-    padding-top: 150px;
-}
-
 .tokenomics__items {
     display: flex;
     justify-content: space-between;
+    position: relative;
+}
+
+.tokenomics-decor {
+    position: absolute;
+    top: -16%;
+    right: -7%;
+    z-index: -5;
 }
 
 .tokenomics__item {
@@ -408,12 +387,7 @@ body {
 }
 
 .tokenomics__item-title {
-    font-family: 'Press Start 2P';
-    color: #FFF;
-    font-size: 22px;
-    font-weight: 400;
     padding-top: 25px;
-    text-transform: uppercase;
 }
 
 .tokenomics__item-text {
@@ -479,9 +453,6 @@ body {
 }
 
 .tokenomics__footer-title {
-    color: #fff;
-    font-size: 48px;
-    font-weight: 600;
     padding-bottom: 35px;
     width: 505px;
 }
@@ -510,6 +481,10 @@ body {
     justify-content: space-between;
     align-items: flex-end;
 }
+
+/* TOKENOMICS END */
+
+/* FOOTER START */
 
 .footer {
     padding-top: 140px;
@@ -559,6 +534,8 @@ body {
     font-size: 14px;
     font-weight: 400;
 }
+
+/* FOOTER END */
 
 @media (max-width: 1070px) {
     .header__top {

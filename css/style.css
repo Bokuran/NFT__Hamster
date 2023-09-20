@@ -6,7 +6,6 @@ body {
     font-weight: 500;
     background: #04081D;
     color: #EBEBEB;
-    overflow-x: hidden;
 }
 
 ul {
@@ -272,6 +271,12 @@ button {
     border-radius: 25px;
     background: linear-gradient(98deg, #383954 0%, rgba(56, 57, 84, 0.35) 100%, #383954 100%);
     backdrop-filter: blur(50px);
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.accessories__item:hover {
+    transform: translateY(-10px);
 }
 
 /* ACCESSORIES END */
@@ -608,7 +613,7 @@ button {
     .famsters__footer {
         padding-top: 20px;
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2, 150px);
     }
 
     .footer {
